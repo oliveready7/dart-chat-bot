@@ -1,28 +1,31 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div id="app">
+        <chat-entry />
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ChatEntry from "./components/ChatEntry";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    name: "App",
+    components: {
+        ChatEntry,
+    },
+    data() {
+        return {
+            fetchingTrainData: true,
+        };
+    },
+    async mounted() {
+        Promise.all([]).then(() => this.fetchingTrainData = false)
+    },
+    methods: {
+        fetchAllDartStations() {
+            
+        }
+    }
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>
