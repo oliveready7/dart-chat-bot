@@ -1,7 +1,7 @@
 # dart-chat-bot
 
 ## Live Demo
-dart.oliveready.com
+https://dart.oliveready.com
 
 ## Project setup
 ```
