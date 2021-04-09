@@ -1,7 +1,7 @@
 # dart-chat-bot
 
 ## Live Demo
-https://awesome-bell-317745.netlify.app/
+dart.oliveready.com
 
 ## Project setup
 ```
